@@ -7,21 +7,23 @@
 </head>
 <body>
 	<header class="header">
-		<h1>Merkury</h1>
 		<div class="wrapper">
 			<div class="header__content">
 				<div class="logo">
-					<img src="./assets/img/logo.png" alt="logo">
+					<img src="./assets/svg/logo.svg" alt="logo" class="logo__pic">
+					<h1 class="logo__name">Merkury</h1>
 				</div>
-				<nav>
-					<ul class="navigation">
-						<li><a href="#" class="nav__link">Features</a></li>
-						<li><a href="#" class="nav__link">Pricing</a></li>
-						<li><a href="#" class="nav__link">Blog</a></li>
-						<li><a href="#" class="nav__link">Contact</a></li>
-					</ul>
-				</nav>
-				<input type="button" name="login" class="button button_login" value="Login">
+				<div class="header__nav-bar">
+					<nav>
+						<ul class="navigation">
+							<li><a href="#" class="nav__link">Features</a></li>
+							<li><a href="#" class="nav__link">Pricing</a></li>
+							<li><a href="#" class="nav__link">Blog</a></li>
+							<li><a href="#" class="nav__link">Contact</a></li>
+						</ul>
+					</nav>
+					<input type="button" name="login" class="button button_login" value="Login">
+				</div>
 			</div>
 		</div>
 	</header>
@@ -62,6 +64,7 @@
 						</div>
 					</div>
 					<div class="needs">
+						<div class="gradient"></div>
 						<div class="needs-layout">
 							<div class="needs-layout__column">
 								<h2 class="heading">All You need is a browser!</h2>
@@ -86,28 +89,107 @@
 			</div>
 			<section class="drag-drop">
 					<div class="drag-drop-layout">
-						<div class="drag-drop-layout__column">
-							<div class="column__grid">
-								<p class="label drag-drop__label one">In Progress <span class="label graph__label">(3)</span></p>
-								<img src="./assets/svg/text_arrow.svg" alt="Arrow" class="arrow">
-								<p class="label drag-drop__label">Completed <span class="label graph__label">(2)</span></p>
-								<img src="./assets/img/in_progress.png" alt="In progress" class="drag-drop__image">
-								<img src="./assets/img/done.png" alt="Completed" class="drag-drop__image">
-								<img src="./assets/img/task.png" alt="Task" class="drag-drop__image">
-								<p class="label browser__label">Drop here</p>
+						<div class="drag-drop-layout__column-1">
+							<div class="column__layout">
+								<div class="column__layout-row">
+									<p class="drag-drop__label">In Progress <span class="label graph__label">(3)</span></p>
+									<img src="./assets/svg/text_arrow.svg" alt="Arrow" class="arrow">
+									<p class="label drag-drop__label">Completed <span class="label graph__label">(2)</span></p>
+								</div>
+								<div class="column__layout-row">
+									<img src="./assets/img/in_progress.png" alt="In progress" class="image drag-drop__image">
+									<img src="./assets/img/done.png" alt="Completed" class="image drag-drop__image">
+								</div>
+								<div class="column__layout-row">
+									<img src="./assets/img/task.png" alt="Task" class="image drag-drop__image drag-drop__image_dropped">
+									<div class="drop">
+										<p class="browser__label">Drop here</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="drag-drop-layout__column">
+						<div class="drag-drop-layout__column-2">
 							<h2 class="heading drag-drop__heading">Drag & Drop</h2>
-							<p class="label browser__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<p class="label browser__label">Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.</p>
-							<img src="./assets/svg/arrow_left.svg" alt="Left arrow">
-							<img src="./assets/svg/arrow_right.svg" alt="Right arrow">
+							<div class="drag-drop-layout__text">
+								<p class="drag-drop__label_col-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p class="drag-drop__label_col-2">Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+							</div>
+							<img src="./assets/svg/arrow_left.svg" alt="Left arrow" class="btn__arrows">
+							<img src="./assets/svg/arrow_right.svg" alt="Right arrow" class="btn__arrows">
 						</div>
 					</div>
+			</section>
+			<section class="psd">
+				<div class="psd__template">
+					<div class="template__text-block">
+						<h2 class="heading">Powerfull PSD Template</h2>
+						<p class="psd__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+						tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+						aliquip ex ea commodo consequat. </p>
+					</div>
+					<img src="./assets/img/Mockup.png" alt="Powerfull PSD Template" class="psd__template-image">
+				</div>
+				<div class="gradient-reversed"></div>
+				<div class="psd__pricing">
+					<h2 class="heading">Check our pricing!</h2>
+					<div class="plans">
+						<div class="plans__price-block">
+							<p class="plans__name">bronze plan</p>
+							<p class="plans__price"><span class="plans__usd">$</span>19<span class="label plans__label">/mon</span></p>
+							<div class="price-block__options">
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/cross.svg" alt="unchecked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/cross.svg" alt="unchecked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+							</div>
+						</div>
+						<div class="plans__price-block">
+							<p class="plans__name">silver plan</p>
+							<p class="plans__price"><span class="plans__usd">$</span>49<span class="label plans__label">/mon</span></p>
+							<div class="price-block__options">
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/cross.svg" alt="unchecked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+							</div>
+						</div>
+						<div class="plans__price-block">
+							<p class="plans__name">gold plan</p>
+							<p class="plans__price"> <span class="plans__usd">$</span>99<span class="plans__label">/mon</span></p>
+							<div class="price-block__options">
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+								<img src="./assets/svg/checked.svg" alt="checked" class="check-box_inner">								
+								<p class="price-block__label">  Lorem ipsum dolor sit am</p>
+							</div>
+						</div>
+					</div>
+					<div class="psd__text-block">
+						<p class="psd__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+						ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+					</div>
+					<div class="psd__join">
+						<img src="./assets/svg/line.svg" alt="line" class="line">
+						<input type="button" name="join" class="button button_join-now" value="Join now!">
+						<img src="./assets/svg/line.svg" alt="line" class="line">
+					</div>
+				</div>
 			</section>
 		</div>
 	</main>
