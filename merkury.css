@@ -473,7 +473,7 @@ body {
 
 .footer__content {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 30% 50% 20%;
 	height: 90px;
     align-items: baseline;
 }
@@ -510,7 +510,7 @@ body {
 
 .social {
 	display: grid;
-	grid-template-columns: 30% 50% 20%;
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 0.5vw;
 	height: 90px;
 	align-items: center;
